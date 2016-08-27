@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>simple selector</title>
+	<style type="text/css">
+		
+h2 {
+	color: red;
+	text-align: center;
+
+}
+.highlite {
+	font-style: italic;
+	font-size: 25px;
+	font-style: bold;
+	background-color: pink;
+}
+
+#mainpoint{
+	background-color: gold;
+	/*font-style: bold; 
+
+	not working*/
+	font-weight: bold;
+}
+
+p , h1{
+	color: blue;
+	
+}
+
+	</style>
+</head>
+<body>
+
+<h1>Simple selectors</h1>
+<h2>Sub heading 1</h2>
+<p class="highlite">.ClassName: Selects any objects that have a class attribute value with the given name. For example, .StdPara would select every object that has a class=”StdPara” attribute without regard for object type.</p>
+<p class="highlite">.ClassName: Selects any objects that have a class attribute value with the given name. For example, .StdPara would select every object that has a class=”StdPara” attribute without regard for object type.</p>
+
+<h2>Sub heading 2</h2>
+<p>It’s possible to further restrict many of these attribute selectors by combining them with tag selectors. For example, p[title~=”Secondary”] selects only the <p> tag objects with title attributes that contain the word Secondary as a discrete word. It’s often possible to combine selectors in unique ways to create precisely the effect you want.</p>
+
+<div>#Id: Selects any objects that have an id attribute value with the given name. For example, #ThirdHeader would select every object that has an id=”ThirdHeader” attribute without regard for object type.
+<span  id="mainpoint">id="mainPoint".</span></div>
+
+</body>
+</html>
