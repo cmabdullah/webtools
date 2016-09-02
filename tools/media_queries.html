@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Media queries</title>
+	<style type="text/css">
+	/*************l124**/
+		#p1{
+			background-color: gold;
+			width: 400px;
+			height: 400px;
+		}
+		#p2{
+			background-color: red;
+			width: 30px;
+			height: 30px;
+		}
+p{
+	border: 1px solid black;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	#p1{
+			
+			width: 80%;
+			
+		}
+		#p2{
+			background-color: red;
+			width: 70px;
+			height: 30px;
+		}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+	#p1{
+			width: 50%;
+		}
+		#p2{
+			background-color: red;
+			width: 50px;
+			height: 30px;
+		}
+}
+
+
+
+	</style>
+</head>
+<body>
+<p id="p1">id1</p>
+<p id="p2">id2</p>
+</body>
+</html>
