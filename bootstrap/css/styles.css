@@ -1,0 +1,29 @@
+body{
+	font-size: 16px;
+	color: red;
+	background-color: wheat;
+	/*************l129**/
+	/*************you must need net connection to simulate it**/
+	font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+	background-color: yellow;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+  background: url('../images/Capture.JPG') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+/*
+#logo-img {
+  background: url('../images/logo.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
