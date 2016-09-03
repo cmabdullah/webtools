@@ -90,13 +90,22 @@ body{
 /* END HEADER l132 */
 
 
-
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
 
 
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+    .container .jumbotron {
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
+    height: 675px;
+  }
 
 }
 
@@ -110,10 +119,24 @@ body{
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+
+    /* Home Page */
+  .container .jumbotron {
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
 
 }
 
@@ -166,6 +189,12 @@ body{
     text-transform: uppercase;
   }
   /* End Header */
+
+
+    .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
 
 
 }
