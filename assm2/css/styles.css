@@ -1,0 +1,68 @@
+.navbar{
+  background-color: #7DB9D0;
+}
+
+.navbar-header .navbar-brand{
+  font-size:2.2em;
+  color:#143F5A;
+}
+
+
+h2{
+  padding-bottom: 20px;
+}
+
+h3{
+  color: #043D4B;
+}
+
+
+
+#nav-list a {
+  color: white;
+  font-style: bold;
+  font-size: 1.5em;
+  text-align: center;
+  background: #67919B;
+}
+#nav-list a:hover {
+  background: white;
+  color: #67919B;
+}
+
+#main-content{
+  width:90%;
+  background-color: #CFEEF0 ;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .collapse .nav{
+  display: none;
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .collapse .nav{
+  display: none;
+}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .collapse .nav{
+  display: none;
+}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .collapse .nav{
+  display: block;
+}
+}
