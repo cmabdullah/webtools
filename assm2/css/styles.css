@@ -19,15 +19,15 @@ h3{
 
 
 #nav-list a {
-  color: white;
+  color: green;
   font-style: bold;
   font-size: 1.5em;
   text-align: center;
   background: #67919B;
 }
 #nav-list a:hover {
-  background: white;
-  color: #67919B;
+  background: red;
+  color: gold;
 }
 
 #main-content{
