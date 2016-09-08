@@ -2,7 +2,7 @@ commit 19bc699c38e12e3fc43c81898fa7f014e06a5fd8
 Author: Abdullah Khan <a.kium.khan@gmail.com>
 Date:   Tue Sep 6 16:24:16 2016 +0600
 
-    complete menu bar v2
+    complete menu bar v2  
 
 commit 2a074e65cd0ae1f3b8b6f2725fff127b04cac072
 Author: Abdullah Khan <a.kium.khan@gmail.com>
