@@ -130,13 +130,51 @@ console.log("stock price is :"+ company[x]);
 ***/
 
 /**************better way: object litteral synt3x**/
-var facebook = {
-	name : "Facebook corporation",
-	ceo:{
-		firstname : "Mark",
-		favcolor: "blue"
-	},
-	"stock of company": 150
+// var facebook = {
+// 	name : "Facebook corporation",
+// 	ceo:{
+// 		firstname : "Mark",
+// 		favcolor: "blue"
+// 	},
+// 	"stock of company": 150
 
+// };
+// console.log(facebook);
+
+
+/***********************function explanetion***/
+//l146-0000
+function multiply(x,y){
+	return x*y ;
+}
+console.log(multiply(10,6));
+multiply.version = "v.2.03.5";
+console.log(multiply.version);
+
+//finction factory
+function makemultiplier(multiplier){
+	var myfunc = function (x){
+		return multiplier*x ;
+	};
+	return myfunc;
 };
-console.log(facebook);
+
+var multiplyby3 = makemultiplier(3);
+console.log(multiplyby3(20));
+
+var doubleall = makemultiplier(3);
+console.log(doubleall(200))
+
+
+//passing function as a argument
+function doOperationOm(x,operation){
+	return operation(x) ;
+}
+
+var result = doOperationOm (5, multiplyby3) ;
+console.log(result);
+
+result = doOperationOm(100, doubleall);
+console.log(result);
+
+//end
