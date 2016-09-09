@@ -100,11 +100,30 @@ console.log(string + "!");
 
 
 /**********handling defult**/
-function orc(cat){
-	if (cat === undefined){
-		cat = "cow";
-	}
-	console.log("dog with "+cat) ;
-}
-orc("tigar");
-orc();
+// function orc(cat){
+// 	if (cat === undefined){
+// 		cat = "cow";
+// 	}
+// 	console.log("dog with "+cat) ;
+// }
+// orc("tigar");
+// orc();
+
+
+/*****************object creation**/
+var company = new Object();
+company.name = "facebook" ;
+console.log(company);
+company.ceo = new Object();
+company.ceo.firstname = "Mark" ;
+company.ceo.fevcolor = "blue" ;
+
+console.log("company ceo name" + company.ceo.firstname) ;
+
+console.log(company["name"]);
+//company.$stock = 150;
+//console.log(company);
+var x = "stock of company";
+company[x] = 150;
+console.log("stock price is :"+ company[x]);
+
