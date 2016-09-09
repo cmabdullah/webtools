@@ -111,6 +111,7 @@ console.log(string + "!");
 
 
 /*****************object creation**/
+/***
 var company = new Object();
 company.name = "facebook" ;
 console.log(company);
@@ -126,4 +127,16 @@ console.log(company["name"]);
 var x = "stock of company";
 company[x] = 150;
 console.log("stock price is :"+ company[x]);
+***/
 
+/**************better way: object litteral synt3x**/
+var facebook = {
+	name : "Facebook corporation",
+	ceo:{
+		firstname : "Mark",
+		favcolor: "blue"
+	},
+	"stock of company": 150
+
+};
+console.log(facebook);
