@@ -291,7 +291,7 @@ var myOtherCircle = new Circle(20);
 console.log(myOtherCircle);
 */
 
-
+/*
 // Object literals and "this"
 var literalCircle = {
   radius: 10,
@@ -312,5 +312,70 @@ var literalCircle = {
 
 console.log(literalCircle.getArea());
 
+*/
 
 
+
+
+
+/**array
+
+//array in js............long hand notation
+var array = new Array();
+array[0] =  "cm" ;
+array[1] =2  ;
+array[2] = function(name){
+	console.log("Hello " +name);
+};
+array[3] = {course : "js"};
+
+console.log(array);
+array[2](array[0]);
+console.log(array[3].course);
+console.log(array[1]);
+console.log(array[0]);
+
+*/
+
+
+
+
+
+/*
+console.log("array is not working");
+var name = ["cm ", "rafid ", "rakib " , "rabbi "];
+// console.log(name);
+
+for (var i=0; i< name.length; i++){
+	console.log("hello "+name[i]);
+}
+
+// name[100] = "kh";
+// for (var i=0; i< name.length; i++){
+// 	console.log("hello "+name[i]);
+// }
+//array end bt [name.length] not working....
+
+
+*/
+
+
+var myobject = {
+	name : "cm",
+	region: "amtali"
+};
+
+for(var prop in myobject){
+	console.log(prop  + ":" + myobject[prop]);
+}
+
+var names1 = ["cm ", "rafid ", "rakib "];
+for (var name in names1) {
+  console.log("Hello " + names1[name]);
+}
+
+names1.greeting = "Hi!";
+
+for (var name in names1) {
+  console.log("Hello " + names1[name]);
+}
