@@ -143,38 +143,96 @@ console.log("stock price is :"+ company[x]);
 
 
 /***********************function explanetion***/
-//l146-0000
-function multiply(x,y){
-	return x*y ;
+// //l146-0000
+// function multiply(x,y){
+// 	return x*y ;
+// }
+// console.log(multiply(10,6));
+// multiply.version = "v.2.03.5";
+// console.log(multiply.version);
+
+// //finction factory
+// function makemultiplier(multiplier){
+// 	var myfunc = function (x){
+// 		return multiplier*x ;
+// 	};
+// 	return myfunc;
+// };
+
+// var multiplyby3 = makemultiplier(3);
+// console.log(multiplyby3(20));
+
+// var doubleall = makemultiplier(3);
+// console.log(doubleall(200))
+
+
+// //passing function as a argument
+// function doOperationOm(x,operation){
+// 	return operation(x) ;
+// }
+
+// var result = doOperationOm (5 , multiplyby3) ;
+// console.log(result);
+
+// result = doOperationOm(100 , doubleall);
+// console.log(result);
+
+// //end
+
+
+
+/*****************Passing Variables by Value vs. by Reference***/
+// l147-0002
+// var a = 7;
+// var b = a;
+// console.log("a is :" +a);
+// console.log("b is :" +b);
+
+// b = 5;
+// console.log("after b is update");
+// console.log("a is :" +a);
+// console.log("b is :" +b);
+
+/*  panding
+var a = {x: 7};
+var b = a;
+console.log(a);
+console.log(b);
+
+b.x = 5;
+console.log("after b.x update :");
+console.log(a);
+console.log(b);
+end    */
+
+
+// pass by refference vs by value
+// function changePrimitive(primitive){
+// 	console.log("in changePrimitive....");
+// 	console.log("before");
+// 	console.log(primitive);
+
+// 	primitive =8;
+// 	console.log("after");
+// 	console.log(primitive);
+// }
+// var value = 10;
+// changePrimitive(value);//value = primitive
+// console.log("after changePrimitive, origin value");
+// console.log(value);
+
+/*** not working update your browser
+function changeObject(ObjVal){
+	console.log("in changeObject....");
+	console.log("before");
+	console.log(ObjVal);
+
+	ObjVal.x =8;
+	console.log("after");
+	console.log(ObjVal);
 }
-console.log(multiply(10,6));
-multiply.version = "v.2.03.5";
-console.log(multiply.version);
-
-//finction factory
-function makemultiplier(multiplier){
-	var myfunc = function (x){
-		return multiplier*x ;
-	};
-	return myfunc;
-};
-
-var multiplyby3 = makemultiplier(3);
-console.log(multiplyby3(20));
-
-var doubleall = makemultiplier(3);
-console.log(doubleall(200))
-
-
-//passing function as a argument
-function doOperationOm(x,operation){
-	return operation(x) ;
-}
-
-var result = doOperationOm (5, multiplyby3) ;
-console.log(result);
-
-result = doOperationOm(100, doubleall);
-console.log(result);
-
-//end
+var value = 10;
+changeObject(value);//value = ObjVal
+console.log("after changeObject, origin value");
+console.log(value);
+**/
