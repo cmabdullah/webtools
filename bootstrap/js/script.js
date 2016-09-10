@@ -221,6 +221,11 @@ end    */
 // console.log("after changePrimitive, origin value");
 // console.log(value);
 
+
+
+
+
+
 /*** not working update your browser
 function changeObject(ObjVal){
 	console.log("in changeObject....");
@@ -236,3 +241,51 @@ changeObject(value);//value = ObjVal
 console.log("after changeObject, origin value");
 console.log(value);
 **/
+
+
+/*********Function Constructors, prototype, and the 'this'***/
+// function test(){
+// 	console.log("hello World");
+// }
+// test();
+
+// console.log(this);
+
+/*
+this.myname = "abdullah" ;
+console.log(window.myname);
+
+
+//function calculate pi val
+
+function circle (radius){
+	this.radius = radius;
+
+	this.getarea = function (){
+		return Math.PI * Math.pow(this.radius , 2);
+	};
+}
+
+var mycircle = new circle(10);
+// console.log(mycircle);
+console.log(mycircle.getarea()) ;
+*/
+
+
+/*function prototype*/
+
+function Circle (radius) {
+  this.radius = radius;
+}
+
+Circle.prototype.getArea = 
+  function () {
+    return Math.PI * Math.pow(this.radius, 2);
+  };
+
+
+var myCircle = new Circle(10);
+console.log(myCircle.getArea());
+
+var myOtherCircle = new Circle(20);
+console.log(myOtherCircle);
