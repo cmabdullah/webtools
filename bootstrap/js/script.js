@@ -359,7 +359,7 @@ for (var i=0; i< name.length; i++){
 
 */
 
-
+/*********
 var myobject = {
 	name : "cm",
 	region: "amtali"
@@ -379,3 +379,21 @@ names1.greeting = "Hi!";
 for (var name in names1) {
   console.log("Hello " + names1[name]);
 }
+
+********endl150****/
+
+//closures
+function makemultiplier (multiplier){
+	// var multiplier = 2;
+  function b() {
+    console.log("Multiplier is: " + multiplier);
+  }
+  b();
+	 return(
+		function(x){
+			return multiplier*x;
+		}
+	);
+}
+var doubleall = makemultiplier(2);
+console.log(doubleall(10));
