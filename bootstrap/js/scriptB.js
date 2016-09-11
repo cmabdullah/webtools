@@ -1,4 +1,6 @@
-var name = "rafi" ;
-function scriptB() {
-	console.log("hi "+ name);
+var greeterB = {};
+
+greeterB.name = "rafi" ;
+greeterB.scriptB = function () {
+	console.log("hi "+ greeterB.name);
 }

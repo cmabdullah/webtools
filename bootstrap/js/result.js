@@ -1,2 +1,2 @@
-scriptA();
-scriptB();
+greeterA.scriptA();
+greeterB.scriptB();
