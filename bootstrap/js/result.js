@@ -1,0 +1,2 @@
+scriptA();
+scriptB();
