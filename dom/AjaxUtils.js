@@ -1,12 +1,19 @@
-(function(golbal){
+//(function(golbal){
+
+  (function (global) {
   //setup namespace for utility
   var ajaxUtils = {};
   
+
+
+
+
+
   //Return a HTTP Request Object
   
   function getRequestObject(){
-  if (window.XMLHttpRequest({
-        return (new XMLHttpRequest));
+  if (window.XMLHttpRequest){//current version of AJAX
+        return (new XMLHttpRequest());
       }
   else if (window.ActiveXObject){
       //very old IE browser
@@ -23,10 +30,10 @@
 //Make an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest =
 function(requestUrl , responseHandler){
-  var = getRequestObject(); 
+  var request = getRequestObject(); 
   request.onreadystatechange = 
     function () {
-    handaleResponse(request, responseHandaler);
+    handleResponse(request, responseHandler);
     };
   
     request.open("GET" , requestUrl, true) ;
@@ -38,8 +45,8 @@ function(requestUrl , responseHandler){
   //function if response is reads
   //And not error
 function handleResponse(request, responseHandler){
-  if ((request.readystate == 4)
-    && (request.start == 200)){
+  if ((request.readyState == 4)
+    && (request.status == 200)){
     responseHandler(request);
     }
   }
