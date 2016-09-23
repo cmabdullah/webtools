@@ -29,11 +29,12 @@
 
 //Make an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest =
-function(requestUrl , responseHandler){
+function(requestUrl , responseHandler , isJsonResponse){
   var request = getRequestObject(); 
   request.onreadystatechange = 
     function () {
-    handleResponse(request, responseHandler);
+    handleResponse(request, responseHandler,
+      isJsonResponse);
     };
   
     request.open("GET" , requestUrl, true) ;
@@ -44,11 +45,28 @@ function(requestUrl , responseHandler){
   //only cells user provideed response Handler
   //function if response is reads
   //And not error
-function handleResponse(request, responseHandler){
+function handleResponse(request, responseHandler, 
+  isJsonResponse){
   if ((request.readyState == 4)
     && (request.status == 200)){
-    responseHandler(request);
+    if(isJsonResponse == undefined){
+      isJsonResponse = true;
     }
+    if(isJsonResponse){
+      responseHandler(JSON.parse(request.responseText))
+    }
+    else{
+      responseHandler(request.responseText);
+    }
+  }
+
+
+
+
+
+  // {
+  //   responseHandler(request);
+  //   }
   }
 //Expose utility to the global object
 global.$ajaxUtils = ajaxUtils;
