@@ -1,40 +1,39 @@
-body {
+body{
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: white;
+  background-color: red;
+  /*************l129**/
+  /*************you must need net connection to simulate it**/
   font-family: 'Oxygen', sans-serif;
 }
-
-/** HEADER **/
-#header-nav {
-  background-color: #f6b319;
+/************Header**/
+#header-nav{
+  background-color: yellow;
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
+  background: url('../images/Capture.JPG') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
 }
 
-.navbar-brand {
+
+.navbar-brand{
   padding-top: 25px;
 }
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
+/*************Resturent name**/
+.navbar-brand h1{
+  font-family: 'Lora' , sans-serif;
+  color: red;
+  font-size: 2em;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
   margin-bottom: 0;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
+  margin-top: 0;
+  line-height: .80;
+  font-weight: bold;
 }
 .navbar-brand p { /* Kosher cert */
   color: #000;
@@ -42,9 +41,16 @@ body {
   font-size: .7em;
   margin-top: 15px;
 }
+
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/***************************l132***/
 
 #nav-list {
   margin-top: 10px;
@@ -76,11 +82,18 @@ body {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
 }
-/* END HEADER */
+/* END HEADER l132 */
+
+
+
+
+
+
 
 /* FOOTER */
 .panel-footer {
@@ -114,11 +127,18 @@ body {
 
 
 
+
+
+
+
+
 /* HOME PAGE */
 .container .jumbotron {
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
 }
+
+
 
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
@@ -131,14 +151,16 @@ body {
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
+
 #menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
+  background: url('../images/car.jpg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
+  background: url('../images/Kali-Linux.jpg') no-repeat;
   background-position: center;
 }
+
 #menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
@@ -152,6 +174,8 @@ body {
   opacity: .8;
 }
 /* END HOME PAGE */
+
+
 
 /* MENU CATEGORIES PAGE */
 .category-tile { 
@@ -182,6 +206,12 @@ body {
   margin-bottom: 50px;
 }
 /* END MENU CATEGORIES PAGE */
+
+
+
+
+
+
 
 /* SINGLE CATEGORY PAGE */
 .menu-item-tile {
@@ -230,12 +260,18 @@ h3.menu-item-title {
 /* END SINGLE CATEGORY PAGE */
 
 
+
+
+
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
+
+    .container .jumbotron {
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
     height: 675px;
   }
+
 }
 
 /********** Medium devices only **********/
@@ -249,9 +285,9 @@ h3.menu-item-title {
   }
   /* End Header */
 
-  /* Home Page */
+    /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -259,13 +295,17 @@ h3.menu-item-title {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* Home Page */
   .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
+    background: url('../images/Corner_Cube_Reflector_CCR.jpg') no-repeat;
     height: 432px;
   }
   /* End Home Page */
+
 }
+
+
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -286,10 +326,14 @@ h3.menu-item-title {
     height: 20px;
   }
 
-  #collapsable-nav a { /* Collapsed nav menu text */
+
+
+
+    #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
+
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
@@ -311,6 +355,8 @@ h3.menu-item-title {
   }
   /* End Header */
 
+
+
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
@@ -324,17 +370,23 @@ h3.menu-item-title {
   }
   /* End Footer */
 
-  /* Home Page */
-  .container .jumbotron {
+
+
+
+
+
+    .container .jumbotron {
     margin-top: 30px;
     padding: 0;
   }
+ 
   #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
 
-  .menu-item-photo {
+
+    .menu-item-photo {
     margin-right: auto;
   }
   .menu-item-tile .menu-item-price {
@@ -343,7 +395,21 @@ h3.menu-item-title {
   .menu-item-description {
     text-align: center;;
   }
+
+
+
+
+
+
+  
 }
+
+
+
+
+
+
+
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -355,13 +421,19 @@ h3.menu-item-title {
   }
   /* End Header */
   
+
+
+
+
+
   /* Home page */
   #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
 
-  .col-xxs-12 {
+
+    .col-xxs-12 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -370,6 +442,3 @@ h3.menu-item-title {
     width: 100%;
   }
 }
-
-
-
